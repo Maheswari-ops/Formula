@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Practice"
+    android:background="@drawable/mahi2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="150dp"
+            android:text=" Speed:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/ped1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/pspeed"
+            android:inputType="text"
+            android:hint="Enter Speed"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/plorentz"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/pspeed"
+            android:text=" Lorentz:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/ped2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ped1"
+            android:layout_toRightOf="@id/pspeed"
+            android:textColor="@color/black"
+            android:hint="Enter Speed"
+            android:inputType="text"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/pcal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plorentz"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="111dp"
+            android:width="30dp"
+            android:height="10dp"
+            android:backgroundTint="#F19CBB"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Calculate"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/panswer"
+            android:layout_width="match_parent"
+            android:layout_height="740dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

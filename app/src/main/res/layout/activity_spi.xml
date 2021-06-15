@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spi"
+    android:background="@drawable/mahi2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="HH:mm:ss"
+            android:layout_above="@id/result2"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/spifactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text=""
+            android:layout_below="@id/result2"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/result2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="30dp"
+            android:backgroundTint="#F19CBB"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:width="150dp"
+            android:height="50dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
