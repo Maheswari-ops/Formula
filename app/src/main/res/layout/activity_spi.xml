@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:textSize="50dp"
             android:text="HH:mm:ss"
+            android:inputType="number"
             android:layout_above="@id/result2"
             android:layout_centerInParent="true"
             android:layout_marginBottom="30dp"

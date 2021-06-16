@@ -36,7 +36,7 @@
             android:layout_marginRight="10dp"
             android:layout_toRightOf="@id/speed"
             android:hint="Enter Speed"
-            android:inputType="text"
+            android:inputType="numberDecimal"
             android:textSize="15dp" />
 
 

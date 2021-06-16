@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,11 +39,16 @@ public class Practice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
 
+
         ped1 = findViewById(R.id.ped1);
         ped2 = findViewById(R.id.ped2);
         pcal = findViewById(R.id.pcal);
         panswer = findViewById(R.id.panswer);
         vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        ped1.addTextChangedListener(input1TextWatcher);
+        ped2.addTextChangedListener(input1TextWatcher);
+
+
 
 
         pcal.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +84,27 @@ public class Practice extends AppCompatActivity {
 
 
 
+
     }
+    private TextWatcher input1TextWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            String input1speed = ped1.getText().toString().trim();
+            String input1lorentz = ped2.getText().toString().trim();
+            pcal.setEnabled(!input1speed.isEmpty() && !input1lorentz.isEmpty());
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
 
 
     
